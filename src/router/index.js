@@ -18,7 +18,25 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/About.vue")
-  }
+  },
+  {
+    path: '/Calander',
+    name: 'Calander',
+    component: () => import( '../components/Calander.vue'),
+   
+  },
+  {
+    path: '/Day',
+    name: 'Day',
+    component: () => import( '../components/Day.vue'),
+   
+  },
+  {
+    path: '/Picker',
+    name: 'Picker',
+    component: () => import( '../components/Picker.vue'),
+   
+  },
 ];
 
 const router = new VueRouter({
